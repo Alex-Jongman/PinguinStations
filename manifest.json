@@ -1,0 +1,11 @@
+{
+    "name": "Pinguin Stations",
+    "lang": "nl-NL",
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "images/logo-pinguin.svg"
+      }
+    ]
+  }

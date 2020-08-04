@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="manifest" href="manifest.json" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Pinguin Stations" />
+    <meta name="apple-mobile-web-app-title" content="Pinguin Stations" />
+    <meta name="msapplication-starturl" content="/index.html" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="icon" href="images/logo-pinguin.svg" />
+    <link rel="apple-touch-icon" href="images/logo-pinguin.svg" />
+
+    <title>Pinguin Stations</title>
+    <link href="pinguin.css" rel="stylesheet" />
+    <script type="module" src="./pinguin.mjs"></script>
+  </head>
+  <body>
+    <h1>Pinguin Radio Stations</h1>
+
+    <ul>
+      <li>
+        <button id="btn-pinguinIndie">
+          <img src="images/PinguinIndie.svg" alt="Pinguin Indie logo" />
+        </button>
+        <audio
+          id="audio-pinguinIndie"
+          preload="none"
+          src="http://streams.pinguinradio.com/PinguinRadio192.mp3"
+        ></audio>
+      </li>
+      <li>
+        <button id="btn-pinguinClassic">
+          <img src="images/PinguinClassic.svg" alt="Pinguin Indie logo" />
+        </button>
+        <audio
+          id="audio-pinguinClassic"
+          preload="none"
+          src="http://streams.pinguinradio.com/PinguinClassics192.mp3"
+        ></audio>
+      </li>
+    </ul>
+
+    <button id="btn-stop">Stop</button>
+  </body>
+</html>
