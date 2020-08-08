@@ -1,5 +1,4 @@
-document.cookie = "SameSite=Strict; Secure";
-
+// document.cookie = "SameSite=Strict; Secure";
 
 let pinguinStations = [];
 
@@ -23,3 +22,7 @@ document.querySelector("#btn-pinguinClassic").addEventListener('click', event =>
     stopAllStations();
      pinguinStations.classic.play();
 });
+
+let obj = document.createElement('audio');
+console.log(obj.volume);
+obj.volume = 0.75;
