@@ -1,13 +1,5 @@
 document.cookie = "SameSite=Strict; Secure";
 
-navigator.serviceWorker.register('serviceWorker.js').then(
-    function (reg) {
-        console.log(':-)', reg);
-    },
-    function (err) {
-        console.log(':-(', err);
-    }
-);
 
 let pinguinStations = [];
 
