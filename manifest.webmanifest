@@ -3,9 +3,21 @@
     "lang": "nl-NL",
     "start_url": "/index.html",
     "display": "standalone",
-    "icons": [
-      {
-        "src": "images/logo-pinguin.svg"
-      }
-    ]
+    "icons": [{
+      "src": "images/logo-pinguin-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }, {
+      "src": "images/logo-pinguin-48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }, {
+      "src": "images/logo-pinguin-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "images/logo-pinguin-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }]
   }
