@@ -21,7 +21,16 @@
 
     <title>Pinguin Stations</title>
     <link href="pinguin.css" rel="stylesheet" />
-    <script src="serviceWorker.js"></script>
+    <script>
+      navigator.serviceWorker.register("serviceWorker.js").then(
+        function (reg) {
+          console.log(":-)", reg);
+        },
+        function (err) {
+          console.log(":-(", err);
+        }
+      );
+    </script>
     <script type="module" src="./pinguin.mjs"></script>
   </head>
   <body>
