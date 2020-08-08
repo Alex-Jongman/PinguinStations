@@ -24,5 +24,5 @@ document.querySelector("#btn-pinguinClassic").addEventListener('click', event =>
 });
 
 let obj = document.createElement('audio');
-console.log(obj.volume);
+console.log('audio', obj.volume);
 obj.volume = 0.75;
