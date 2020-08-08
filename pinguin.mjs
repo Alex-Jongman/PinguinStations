@@ -8,9 +8,10 @@ let obj = document.createElement('audio');
 
 let volumeCtl = document.querySelector("#volume");
 volumeCtl.addEventListener('change', event => {
-    console.log(volumeCtl.value);
-    obj.volume = volumeCtl/10;
-    console.log('audio', obj.volume);
+    let newVolume = Number(volumeCtl)/10;
+    console.log(newVolume);
+    obj.volume = newVolume;
+    console.log('audio', newVolume);
 });
 
 
