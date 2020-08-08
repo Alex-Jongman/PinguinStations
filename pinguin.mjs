@@ -5,6 +5,11 @@ console.log('----------------');
 console.log('Audio stuff');
 
 let obj = document.createElement('audio');
+
+let volumeCtl = document.querySelector("#volume");
+volumeCtl.addEventListener('change', event => {
+    console.log(volumeCtl.value);
+});
 console.log('audio', obj.volume);
 obj.volume = 0.75;
 
