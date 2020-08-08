@@ -1,5 +1,16 @@
 // document.cookie = "SameSite=Strict; Secure";
 
+console.log('Pinguin Stations');
+console.log('----------------');
+console.log('Audio stuff');
+
+let obj = document.createElement('audio');
+console.log('audio', obj.volume);
+obj.volume = 0.75;
+
+console.log('----------------');
+console.log('Stations - stuff');
+
 let pinguinStations = [];
 
 pinguinStations.indie = document.querySelector("#audio-pinguinIndie");
@@ -23,6 +34,3 @@ document.querySelector("#btn-pinguinClassic").addEventListener('click', event =>
      pinguinStations.classic.play();
 });
 
-let obj = document.createElement('audio');
-console.log('audio', obj.volume);
-obj.volume = 0.75;
